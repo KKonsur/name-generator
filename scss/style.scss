@@ -1,0 +1,107 @@
+body {
+   background-color: #202f42;
+}
+
+.container {
+   width: 70%;
+   height: 100vh;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+      'h1 h1 h1'
+      'btn_male . btn_female'
+      '. result .';
+   justify-content: space-around;
+
+   @media (max-width: 720px) {
+      grid-template-areas:
+         'h1 h1 h1'
+         '. btn_male . '
+         '. result .'
+         '.btn_female .';
+      height: auto;
+   }
+}
+h1 {
+   background-color: rgba($color: #fff, $alpha: 0.1);
+   padding: 1rem;
+   grid-area: h1;
+   font-size: 3rem;
+   align-self: center;
+   justify-self: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #35c541;
+   text-shadow: 5px 5px #000;
+   text-align: center;
+}
+.btn_male,
+.btn_female {
+   display: block;
+   width: 12rem;
+   height: 4rem;
+   padding: 0.5rem;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.6rem;
+   position: relative;
+   color: #fff;
+   text-shadow: 1px 1px #000000;
+   letter-spacing: 0.2rem;
+   text-transform: uppercase;
+   grid-area: btn_male;
+
+   &::before,
+   &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+   }
+
+   &::before {
+      box-shadow: 1px 1px 3px #000000;
+      transform: translateX(-0.4rem) translateY(0.4rem);
+      background: #35c541;
+      z-index: -1;
+      transition: transform 0.3s;
+      border: none;
+   }
+
+   &::after {
+      border: 1px solid #fff;
+      background: transparent;
+      transition: transform 0.4s;
+   }
+
+   &:hover::before {
+      transform: translateX(0) translateY(0);
+      z-index: -1;
+   }
+
+   &:hover::after {
+      transform: translateX(-0.4rem) translateY(0.4rem);
+      z-index: -2;
+   }
+}
+
+.btn_female {
+   justify-self: end;
+   grid-area: btn_female;
+}
+
+.result {
+   grid-area: result;
+   justify-self: center;
+   font-size: 2rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #35c541;
+   text-shadow: 3px 3px #000;
+}
