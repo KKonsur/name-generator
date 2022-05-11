@@ -10,7 +10,7 @@ const male = ['Adam', 'Jan', 'Jakub', 'Andrzej', 'Dawid', 'Szymon', 'Konrad', 'F
 
 const female = ['Aleksandra', 'Adela', 'Aldona', 'Adrianna', 'Amelia', 'Angelika', 'Anetla', 'Anita', 'Anna', 'Aurelia', 'Balbina',
    'Bożena', 'Bogumiła', 'Beata', 'Barbara', 'Bianka', 'Celina', 'Czesława', 'Dagmara', 'Diana', 'Debora', 'Dobrosława', 'Dorota', 'Daniela',
-   'Edyta', 'Edmunda', 'Wiking', 'Eleonora', 'Eliza', 'Elwira', 'Emilia', 'Ewa', 'Ewelina', 'Eryka', 'Faustyna', 'Florencja', 'Florentyna',
+   'Edyta', 'Edmunda', 'Eleonora', 'Eliza', 'Elwira', 'Emilia', 'Ewa', 'Ewelina', 'Eryka', 'Faustyna', 'Florencja', 'Florentyna',
    'Felicja', 'Filomena', 'Gabriela', 'Gaja', 'Gizela', 'Greta', 'Genowefa', 'Halina', 'Helena', 'Henryka', 'Hermeneglida', 'Hortensja',
    'Honorata', 'Ida', 'Ingrid', 'Irena', 'Iris', 'Iwona', 'Iza', 'Izabela', 'Jadwiga', 'Jola', 'Jolanta', 'Julia', 'Justyna', 'Kaja',
    'Kamila', 'Klara', 'Klaudia', 'Kinga', 'Katarzyna', 'Karolina', 'Lucyna', 'Luna', 'Lena', 'Lidia', 'Liliana', 'Łucja', 'Magda',
